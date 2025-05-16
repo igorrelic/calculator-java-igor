@@ -1,23 +1,14 @@
 # REZULTATI TESTIRANJA
 
 Testirano	Ocekivano	Dobijeno	Test prošao
-
 5+5		10		10		Da
-
 5-5		0		0		Da
-
 5*5		25		25		Da
-
 5/5		1		1		Da
-
 4+5*6		36		36		Da
-
 -5+7		2		2		Da
-
 -5-5		-10		-10		Da
-
 5++5		error		error		Da
-
 5--5		error		error		Da
 5**5		error		error		Da
 5//5		error		error		Da
