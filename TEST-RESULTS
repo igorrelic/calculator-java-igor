@@ -34,3 +34,32 @@ prazan unos	error		StringIndexOutOfBoundsException		Ne
 12.35 + 18.68	31.03		31.03					Da
 
 
+
+
+
+# Jedinični test
+import java.util.ArrayList;
+import java.util.List;
+
+public class CalculatorTest {
+
+    public static void main(String[] args) {
+        List<Float> numbers = new ArrayList<>();
+        numbers.add(5.0f);
+        numbers.add(3.0f);
+
+        List<String> operations = new ArrayList<>();
+        operations.add("+");
+
+        Calculator.Calculate(numbers, operations);
+
+        float expected = 8.0f;
+        float actual = Calculator.finalResult;
+
+        if (expected == actual) {
+            System.out.println("Test passed.");
+        } else {
+            System.out.println("Test failed. Expected: " + expected + ", but got: " + actual);
+        }
+    }
+}
